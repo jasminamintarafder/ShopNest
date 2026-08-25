@@ -1,0 +1,39 @@
+
+> shopnest@1.0.0 dev
+> concurrently "npm run start:backend" "npm run start:frontend"
+
+[0] 
+[0] > shopnest@1.0.0 start:backend
+[0] > npm --prefix backend run dev
+[0] 
+[1] 
+[1] > shopnest@1.0.0 start:frontend
+[1] > npm --prefix frontend run dev
+[1] 
+[0] 
+[0] > backend@1.0.0 dev
+[0] > nodemon index.js
+[0] 
+[1] npm error Missing script: "dev"
+[1] npm error
+[1] npm error To see a list of scripts, run:
+[1] npm error   npm run
+[1] npm error Log files were not written due to an error writing to the directory: C:\Users\Rahul\AppData\Local\npm-cache\_logs
+[1] npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal
+[1] npm run start:frontend exited with code 1
+[0] [33m[nodemon] 3.1.14[39m
+[0] [33m[nodemon] to restart at any time, enter `rs`[39m
+[0] [33m[nodemon] watching path(s): *.*[39m
+[0] [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[0] [32m[nodemon] starting `node index.js`[39m
+[0] ◇ injected env (8) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+[0] ◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
+[0] Server is running on port 5000
+[0] MongoDB connection error: Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.omfmftd.mongodb.net
+[0]     at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:296:17) {
+[0]   errno: undefined,
+[0]   code: 'ETIMEOUT',
+[0]   syscall: 'querySrv',
+[0]   hostname: '_mongodb._tcp.cluster0.omfmftd.mongodb.net'
+[0] }
+[0] [31m[nodemon] app crashed - waiting for file changes before starting...[39m
